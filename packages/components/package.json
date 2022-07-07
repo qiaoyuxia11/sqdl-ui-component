@@ -1,6 +1,6 @@
 {
   "name": "@sqdl-ui-components/components",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "> TODO: description",
   "author": "qiaoqiaoyuxia <qyx199999@163.com>",
   "homepage": "https://github.com/qiaoyuxia11/sqdl-ui-component#readme",
@@ -16,7 +16,6 @@
     "lib",
     "es"
   ],
-
   "publishConfig": {
     "access": "public"
   },
