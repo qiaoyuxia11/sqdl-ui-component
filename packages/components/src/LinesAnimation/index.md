@@ -4,9 +4,9 @@ nav:
   path: /components
   order: 0
 group:
-  title: 数据录入
+  title: 光效动画
 ---
 
-## Buttonss
+## LinesAnimation
 
 <code src="./demos/demo1.tsx"></code>
