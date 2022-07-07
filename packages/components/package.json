@@ -1,6 +1,6 @@
 {
   "name": "@sqdl-ui-components/components",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "> TODO: description",
   "author": "qiaoqiaoyuxia <qyx199999@163.com>",
   "homepage": "https://github.com/qiaoyuxia11/sqdl-ui-component#readme",
@@ -17,8 +17,8 @@
     "es"
   ],
   "dependencies": {
-    "classnames": "^2.3.1",
-    "antd": "^4.21.5"
+    "antd": "^4.21.5",
+    "classnames": "^2.3.1"
   },
   "publishConfig": {
     "access": "public"
