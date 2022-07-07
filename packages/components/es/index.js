@@ -1,2 +1,2 @@
 export { default as Button } from './Button';
-export { default as Buttonss } from './Buttonss';
+export { default as LinesAnimation } from './LinesAnimation';
