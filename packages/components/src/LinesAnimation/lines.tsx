@@ -26,7 +26,7 @@ interface Iprops {
 const SvgRect: FC<Iprops> = ({ width, height, borderRadius = 4, color }) => {
   const _style = { stroke: color };
   return (
-    <svg viewBox={`0 0 ${width} ${height}`}>
+    <svg viewBox={`0 0 ${width} ${height}`} style={_style}>
       <rect
         x="0"
         y="0"

@@ -13,7 +13,7 @@ import './index.less';
  */
 
 interface Iprops {
-  children: any;
+  children: React.ReactElement;
   color?: string;
   type?: string;
   hover?: boolean;
@@ -22,8 +22,8 @@ interface Iprops {
 
 const LinesAnimation: FC<Iprops> = ({ children, color, type, hover = true, active = false }) => {
   const child = React.Children.only(children);
-  const [linesMod, setLinesMod] = useState<any>();
-  let buttonRef = useRef<any>();
+  const [linesMod, setLinesMod] = useState<React.ReactElement>();
+  let buttonRef = useRef<HTMLDivElement>(null);
   const styleType = type ? `button-${type}` : 'button-transparent';
   const newChild = React.cloneElement(
     child,
@@ -46,7 +46,7 @@ const LinesAnimation: FC<Iprops> = ({ children, color, type, hover = true, activ
 
   useEffect(() => {
     if (buttonRef.current && buttonRef.current.childNodes) {
-      const _current = buttonRef.current.childNodes[0];
+      const _current: any = buttonRef.current.childNodes[0];
       const { clientWidth, clientHeight } = _current;
       const Style = window.getComputedStyle(_current, null);
       const borderRadius = parseInt(Style.getPropertyValue('border-radius'));
