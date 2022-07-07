@@ -22,8 +22,8 @@ interface Iprops {
 
 const LinesAnimation: FC<Iprops> = ({ children, color, type, hover = true, active = false }) => {
   const child = React.Children.only(children);
-  const [linesMod, setLinesMod] = useState(null);
-  let buttonRef = useRef(null);
+  const [linesMod, setLinesMod] = useState<any>();
+  let buttonRef = useRef<any>();
   const styleType = type ? `button-${type}` : 'button-transparent';
   const newChild = React.cloneElement(
     child,
